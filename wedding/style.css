@@ -1,0 +1,283 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, serif;
+} 
+
+body {
+	font-size: 16px;
+	background-color: #1c1c1c;
+	margin: 0px;
+	
+/*	
+	background-image: url("./images/petrov1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto; /* cover, contain*/
+
+}
+
+.EdgeBorderDiv
+{
+	/*height: 100%;*/
+	position: fixed;
+	top: 40px;
+	bottom: 40px;
+}
+
+#mainFrame
+{
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: fixed;
+	background-image: url("./images/petrov1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; /* auto, cover, contain*/
+}
+
+#negativeMarginCompensator
+{
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+h1
+{
+	text-align: center;
+	color: #F5F5F5;
+	margin-bottom: 0px;
+}
+
+#heart
+{
+	transition: 1s;
+}
+
+#countdown
+{
+	color: gray;
+	text-align: center;
+}
+
+/* Pseudo Class Selectors */
+h1:hover
+{
+	cursor: wait;
+}
+h1:hover #heart 
+{
+	font-size: 64px;
+}
+#countdown:hover
+{
+	cursor: wait;
+}
+
+/* Simple Responsive Framework */
+.WholeRow
+{
+	width: 100%;
+}
+
+@media (min-width: 1600px)
+{
+	.Col-1600plus-DisplayNone
+	{
+		display: none;
+	}
+	.Col-1600plus-1
+	{
+		width: 8.33%;
+	}
+	.Col-1600plus-2
+	{
+		width: 16.66%;	
+	}
+	.Col-1600plus-3
+	{
+		width: 25%;
+	}
+	.Col-1600plus-4
+	{
+		width: 33.33%;
+	}
+	.Col-1600plus-5
+	{
+		width: 41.66%;
+	}
+	.Col-1600plus-6
+	{
+		width: 50%;
+	}
+	.Col-1600plus-7
+	{
+		width: 58.33%;
+	}
+	.Col-1600plus-8
+	{
+		width: 66.66%;
+	}
+	.Col-1600plus-9
+	{
+		width: 75%;
+	}
+	.Col-1600plus-10
+	{
+		width: 83.33%;
+	}
+	.Col-1600plus-11
+	{
+		width: 91.66%;
+	}
+	.Col-1600plus-12
+	{
+		width: 100%;
+	}
+
+	#leftBorder
+	{
+		width: 23.5%;
+		border-right: 1px solid dimgray;
+	}
+	#rightBorder
+	{
+		width: 23.5%;
+		border-left: 1px solid dimgray;
+		right: 0;
+	}
+	#mainFrame
+	{
+		left: 25%;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1599px)
+{
+	.Col-1200to1599-DisplayNone
+	{
+		display: none;
+	}
+	.Col-1200to1599-1
+	{
+		width: 8.33%;
+	}
+	.Col-1200to1599-2
+	{
+		width: 16.66%;	
+	}
+	.Col-1200to1599-3
+	{
+		width: 25%;
+	}
+	.Col-1200to1599-4
+	{
+		width: 33.33%;
+	}
+	.Col-1200to1599-5
+	{
+		width: 41.66%;
+	}
+	.Col-1200to1599-6
+	{
+		width: 50%;
+	}
+	.Col-1200to1599-7
+	{
+		width: 58.33%;
+	}
+	.Col-1200to1599-8
+	{
+		width: 66.66%;
+	}
+	.Col-1200to1599-9
+	{
+		width: 75%;
+	}
+	.Col-1200to1599-10
+	{
+		width: 83.33%;
+	}
+	.Col-1200to1599-11
+	{
+		width: 91.66%;
+	}
+	.Col-1200to1599-12
+	{
+		width: 100%;
+	}
+
+	#leftBorder
+	{
+		width: 10%;
+		border-right: 1px solid dimgray;
+	}
+	#rightBorder
+	{
+		width: 10%;
+		border-left: 1px solid dimgray;
+		right: 0;
+	}
+	#mainFrame
+	{
+		left: 12.5%;
+	}
+}
+
+@media (max-width: 1199px)
+{
+	.Col-1199AndLess-DisplayNone
+	{
+		display: none;
+	}
+	.Col-1199AndLess-1
+	{
+		width: 8.33%;
+	}
+	.Col-1199AndLess-2
+	{
+		width: 16.66%;	
+	}
+	.Col-1199AndLess-3
+	{
+		width: 25%;
+	}
+	.Col-1199AndLess-4
+	{
+		width: 33.33%;
+	}
+	.Col-1199AndLess-5
+	{
+		width: 41.66%;
+	}
+	.Col-1199AndLess-6
+	{
+		width: 50%;
+	}
+	.Col-1199AndLess-7
+	{
+		width: 58.33%;
+	}
+	.Col-1199AndLess-8
+	{
+		width: 66.66%;
+	}
+	.Col-1199AndLess-9
+	{
+		width: 75%;
+	}
+	.Col-1199AndLess-10
+	{
+		width: 83.33%;
+	}
+	.Col-1199AndLess-11
+	{
+		width: 91.66%;
+	}
+	.Col-1199AndLess-12
+	{
+		width: 100%;
+	}
+}
