@@ -7,14 +7,7 @@ body {
 	font-size: 16px;
 	background-color: #1c1c1c;
 	margin: 0px;
-	
-/*	
-	background-image: url("./images/petrov1.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: auto; /* cover, contain*/
-
+	min-height: 500px;
 }
 
 .EdgeBorderDiv
@@ -27,6 +20,7 @@ body {
 
 #mainFrame
 {
+	min-height: 500px;
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -40,8 +34,9 @@ body {
 
 #negativeMarginCompensator
 {
-	margin-left: 12px;
-	margin-right: 12px;
+	margin-left: 40px;
+	margin-right: 40px;
+	position: relative;
 }
 
 h1
@@ -62,18 +57,58 @@ h1
 	text-align: center;
 }
 
+#buttonContainer
+{
+	position: absolute;
+	top: 150px;
+	width: 100%;
+}
+
+.Button
+{
+	cursor: pointer;
+	/*height: 100px;*/
+	background-color: rgba(0,0,0,0.50);
+	border: 1px solid black;
+	border-radius: 25px;
+	transition: 1s;
+	color: gray;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.ButtonText
+{
+	text-align: center;
+	padding: 25px;
+}
+
 /* Pseudo Class Selectors */
 h1:hover
 {
 	cursor: wait;
 }
+
 h1:hover #heart 
 {
 	font-size: 64px;
 }
+
 #countdown:hover
 {
 	cursor: wait;
+}
+
+.Button:hover
+{
+	background-color: rgba(0,0,0,0.10);
+	color: #F5F5F5;
+}
+
+.ButtonText:hover
+{
+	text-decoration: underline;
 }
 
 /* Simple Responsive Framework */
