@@ -102,8 +102,8 @@ h1
 
 .Button
 {
+	position: relative;
 	cursor: pointer;
-	/*height: 100px;*/
 	background-color: rgba(0,0,0,0.50);
 	border: 1px solid black;
 	border-radius: 25px;
@@ -231,6 +231,12 @@ h1:hover #heart
 	{
 		left: 25%;
 	}
+	.Button
+	{
+		float: left;
+		margin-left: 8.33%;
+		margin-right: 8.33%;
+	}
 }
 
 @media (min-width: 1200px) and (max-width: 1599px)
@@ -302,6 +308,12 @@ h1:hover #heart
 	#mainFrame
 	{
 		left: 12.5%;
+	}
+	.Button
+	{
+		float: left;
+		margin-left: 2.67%;
+		margin-right: 2.67%;
 	}
 }
 
