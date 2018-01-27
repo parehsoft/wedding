@@ -9,14 +9,6 @@
 	    document.querySelector("#contentPlaceHolder").innerHTML = request.responseText;
     }
 
-    UseAjax.LoadShortMessage = function () {
-        $AjaxUtils.SendGetRequest("./message/shortMessage.txt", function (request) {
-            document.querySelector("#shortMessage").innerHTML = request.responseText;
-            console.log(request);
-            }
-        );
-    };
-
     UseAjax.LoadNetCurtains = function () {
         ShowLoading();
         $AjaxUtils.SendGetRequest("./snippets/netCurtains.html", HandleResponse);
@@ -181,39 +173,7 @@
     global.$UseAjax = UseAjax; // Exposing the namespace.
 })(window); // Calling IIFE.
 
-$UseAjax.LoadShortMessage();
-
 document.getElementById("netCurtains").onclick = $UseAjax.LoadNetCurtains;
 document.getElementById("curtains").onclick = $UseAjax.LoadCurtains;
 document.getElementById("pelmets").onclick = $UseAjax.LoadPelmets;
 document.getElementById("mattresses").onclick = $UseAjax.LoadMattresses;
-document.getElementById("clothesAdjustments").onclick = $UseAjax.LoadClothesAdjustments;
-document.getElementById("upholstery").onclick = $UseAjax.LoadUpholstery;
-document.getElementById("carpets").onclick = $UseAjax.LoadCarpets;
-document.getElementById("pvc").onclick = $UseAjax.LoadPvc;
-document.getElementById("featherPurification").onclick = $UseAjax.LoadFeatherPurification;
-document.getElementById("embroidery").onclick = $UseAjax.LoadEmbroidery;
-document.getElementById("tentReparations").onclick = $UseAjax.LoadTentReparations;
-document.getElementById("rollerBlinds").onclick = $UseAjax.LoadRollerBlinds;
-document.getElementById("gardenFurniture").onclick = $UseAjax.LoadGardenFurniture;
-document.getElementById("carUpholstery").onclick = $UseAjax.LoadCarUpholstery;
-document.getElementById("antiques").onclick = $UseAjax.LoadAntiques;
-
-document.getElementById("materialSale").onclick = $UseAjax.LoadMaterialSale;
-document.getElementById("professionSummary").onclick = $UseAjax.LoadProfessionSummary;
-document.getElementById("householdEquipment").onclick = $UseAjax.LoadHouseholdEquipment;
-document.getElementById("forKids").onclick = $UseAjax.LoadForKids;
-document.getElementById("gifts").onclick = $UseAjax.LoadGifts;
-document.getElementById("advertising").onclick = $UseAjax.LoadAdvertising;
-document.getElementById("billboard").onclick = $UseAjax.LoadBillboard;
-
-document.getElementById("office").onclick = $UseAjax.LoadOffice;
-document.getElementById("schools").onclick = $UseAjax.LoadSchools;
-document.getElementById("theatres").onclick = $UseAjax.LoadTheatres;
-document.getElementById("homeForElderly").onclick = $UseAjax.LoadHomeForElderly;
-document.getElementById("police").onclick = $UseAjax.LoadPolice;
-document.getElementById("healthCare").onclick = $UseAjax.LoadHealthCare;
-document.getElementById("carRepairShops").onclick = $UseAjax.LoadCarRepairShops;
-document.getElementById("veterans").onclick = $UseAjax.LoadVeterans;
-document.getElementById("younker").onclick = $UseAjax.LoadYounker;
-document.getElementById("church").onclick = $UseAjax.LoadChurch;
