@@ -1,7 +1,7 @@
 (function (global) { // IIFE
     var UseAjax = {}; // Namespace.
 
-    var jsonURL = "./jason/Buttons.json";
+    var jsonURL = "./json/Buttons.json";
     var buttonSnippetURL = "./snippets/ButtonSnippet.html";
 
     var jsonContent;
