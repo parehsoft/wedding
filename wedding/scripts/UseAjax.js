@@ -22,12 +22,8 @@
     function FormFinalHTML(fromJson, fromButtonSnippet) {
         var finalHTML = "";
         for (var i = 0; i < fromJson.length; ++i) {
-            console.log(fromJson[i]);
             finalHTML += InsertProperty(fromButtonSnippet, "buttonContent", fromJson[i].text);
-            console.log(i + ": " + finalHTML);
         }
-        console.log("fuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu");
-        console.log(finalHTML);
         InsertHTML("#buttonContainer", finalHTML);
     }
 
