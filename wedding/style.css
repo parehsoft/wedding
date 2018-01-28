@@ -49,10 +49,10 @@ body {
 
 .EdgeBorderDiv
 {
-	/*height: 100%;*/
 	position: fixed;
 	top: 40px;
 	bottom: 40px;
+	transition: 1s;
 }
 
 #backgroundFrame /*mainFrame*/
@@ -128,6 +128,12 @@ h1
 	padding: 25px;
 }
 
+.TextBox
+{
+	position: relative;
+	transition: 1s;
+}
+
 /* Pseudo Class Selectors */
 .Close:hover, .Close:active {
     color: red;
@@ -145,6 +151,17 @@ h1:hover
 h1:hover #heart 
 {
 	font-size: 64px;
+	color: red;
+}
+
+#leftBorder:hover
+{
+	border-right: 1px solid red;
+}
+
+#rightBorder:hover
+{
+	border-left: 1px solid red;
 }
 
 #countdown:hover
@@ -158,9 +175,27 @@ h1:hover #heart
 	color: #F5F5F5;
 }
 
-.ButtonText:hover
+.Button:hover .TextBox:after
 {
-	text-decoration: underline;
+	opacity: 1;
+	color: red;
+}
+
+.Button:hover .TextBox
+{
+	padding-right: 30px;
+}
+
+.TextBox:after
+{
+	content: '\00bb';
+	font-weight: bold;
+	position: absolute;
+	font-size: 2.5em;
+	top: -18px;
+	right: -30px;
+	opacity: 0;
+	transition: 1s;
 }
 
 /* Simple Responsive Framework */
