@@ -21,9 +21,8 @@
     window.$ModalManipulator = ModalManipulator;
 
 })(window);
-
-for (var i = 0; i < ModalManipulator.listOfButtons.length; ++i) {
+/*
+for (var i = 0; i < $ModalManipulator.listOfButtons.length; ++i) {
     $ModalManipulator.listOfButtons[i].onclick = $ModalManipulator.displayModal;
 }
-
-//document.querySelector(".Button").onclick = ModalManipulator.displayModal;
+*/

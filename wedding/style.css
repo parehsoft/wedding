@@ -87,7 +87,7 @@ body {
 	transition: 1s;
 }
 
-#backgroundFrame /*mainFrame*/
+#backgroundFrame
 {
 	height: 100%;
 	margin-left: auto;
@@ -101,7 +101,7 @@ body {
     background-size: cover; /* auto, cover, contain*/
 }
 
-#mainFrame /*mainFrame*/
+#mainFrame
 {
 	margin-left: auto;
 	margin-right: auto;
@@ -142,7 +142,7 @@ h1
 
 .Button
 {
-	position: relative;
+	/*position: relative;*/
 	cursor: pointer;
 	background-color: rgba(0,0,0,0.50);
 	border: 1px solid black;
@@ -166,12 +166,60 @@ h1
 	transition: 1s;
 }
 
+#ButtonContentFrame
+{
+	display: block;
+	position: fixed;
+	bottom: 2%;
+	width: 100%;
+	height: 40%;
+	z-index: 5;
+	transition: 1s;
+	padding-top: 30px;
+}
+
+#Fitter
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#buttonContentContainer
+{
+	background-color: rgba(0,0,0,0.50);
+	border: 1px solid black;
+	border-radius: 25px;
+	transition: 1s;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+#CloseButtonContent
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: silver;
+	font-weight: bold;
+	font-size: 1.5em;
+	transition: 1s;
+	cursor: pointer;
+}
+
+#buttonContentItself
+{
+
+}
+
 /* Pseudo Class Selectors */
-.Close:hover, .Close:active {
+.Close:hover, .Close:active 
+{
     color: red;
 }
 
-.Up a:hover, .Up a:active {
+.Up a:hover, .Up a:active 
+{
 	color: #E3E3E3;
 }
 
@@ -228,6 +276,12 @@ h1:hover #heart
 	right: -30px;
 	opacity: 0;
 	transition: 1s;
+}
+
+#CloseButtonContent:hover, #CloseButtonContent:active
+{
+	/*background-color: red;*/
+	color: red;
 }
 
 /* Simple Responsive Framework */

@@ -1,13 +1,26 @@
 [{
 	"id": 0,
-	"text": "Kde / Where ?"
+	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
+	"text": "Kde / Where ?",
+	"onClick" : "$ButtonFunctions.displayButtonId1();"
 }, {
 	"id": 1,
-	"text": "Kedy / When ?"
+	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
+	"text": "Kedy / When ?",
+	"onClick" : "$ButtonFunctions.displayButtonId2();"
 }, {
 	"id": 2,
-	"text": "Čo / What ?"
+	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
+	"text": "Čo / What ?",
+	"onClick" : "$ButtonFunctions.displayButtonId3();"
 }, {
 	"id": 3,
-	"text": "Prečo / Why ?"
+	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
+	"text": "Prečo / Why ?",
+	"onClick" : "$ButtonFunctions.displayButtonId4();"
+}, {
+	"id": 4,
+	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-11 Col-1600plus-10",
+	"text": "Všetko / All information",
+	"onClick" : "$ModalManipulator.displayModal();"
 }]
