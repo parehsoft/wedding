@@ -22,13 +22,6 @@ body {
     background-color: rgba(0,0,0,0.85);
 }
 
-.ModalRow
-{
-	margin-top: 60px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .Close 
 {
     position: fixed;
@@ -69,14 +62,14 @@ body {
 {
 	position: absolute;
 	bottom: 0px;
-	height: 100px;
+	height: 70px;
 	width: 100%;
 	background-color: black;
 	opacity: 0.7;
 	text-align: center;
 	color: gold;
 	font-weight: bold;
-	padding-top: 20px;
+	padding-top: 5px;
 }
 
 .EdgeBorderDiv
@@ -168,39 +161,57 @@ h1
 
 #ButtonContentFrame
 {
-	display: block;
+	display: none;
 	position: fixed;
 	bottom: 2%;
 	width: 100%;
-	height: 40%;
+	height: auto;
 	z-index: 5;
 	transition: 1s;
-	padding-top: 30px;
+	animation-name: animateButtonContentFrameDisplay;
+    animation-duration: 1s;
+}
+
+
+/* Add Animation */
+@keyframes animateButtonContentFrameDisplay 
+{
+    from {opacity:0;}
+    to {opacity:1;}
 }
 
 #Fitter
 {
 	margin-left: auto;
 	margin-right: auto;
+	height: 100%;
+}
+
+#specialNegativeMarginCompensator
+{
+	height: 100%;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 #buttonContentContainer
 {
 	background-color: rgba(0,0,0,0.50);
 	border: 1px solid black;
-	border-radius: 25px;
+	border-radius: 5px;
 	transition: 1s;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
+	height: 100%;
 }
 
 #CloseButtonContent
 {
 	position: absolute;
-	top: 0px;
-	right: 0px;
-	color: silver;
+	top: -5px;
+	right: -3px;
+	color: red;
 	font-weight: bold;
 	font-size: 1.5em;
 	transition: 1s;
@@ -209,7 +220,9 @@ h1
 
 #buttonContentItself
 {
-
+	border: 1px solid black;
+	margin: 20px;
+		overflow: auto;
 }
 
 /* Pseudo Class Selectors */
