@@ -234,7 +234,12 @@ h1
 
 #booksToAnswerWhy > ul
 {
-	color: red;
+	color: gold;
+}
+
+#booksToAnswerWhy > ul li
+{
+	cursor: pointer;
 }
 
 #booksToAnswerWhy > ul a
