@@ -2,22 +2,22 @@
 	"id": 0,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
 	"text": "Kde / Where ?",
-	"onClick" : "$ButtonFunctions.displayButtonId1();"
+	"onClick" : "$ButtonFunctions.displayButtonWhereAndWhen();"
 }, {
 	"id": 1,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
 	"text": "Kedy / When ?",
-	"onClick" : "$ButtonFunctions.displayButtonId2();"
+	"onClick" : "$ButtonFunctions.displayButtonWhereAndWhen();"
 }, {
 	"id": 2,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
-	"text": "Čo / What ?",
-	"onClick" : "$ButtonFunctions.displayButtonId3();"
+	"text": "Ubytovanie / Accomodation",
+	"onClick" : "$ButtonFunctions.displayButtonAccomodation();"
 }, {
 	"id": 3,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
 	"text": "Prečo / Why ?",
-	"onClick" : "$ButtonFunctions.displayButtonId4();"
+	"onClick" : "$ButtonFunctions.displayButtonWhy();"
 }, {
 	"id": 4,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-11 Col-1600plus-10",

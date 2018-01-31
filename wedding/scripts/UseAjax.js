@@ -24,16 +24,9 @@
         var htmlToEdit = fromButtonSnippet;
         for (var i = 0; i < fromJson.length; ++i) {
             htmlToEdit = fromButtonSnippet;
-            if (i >= fromJson.length - 1) { // the last element
-                htmlToEdit = InsertProperty(htmlToEdit, "classes", fromJson[i].classes);
-                htmlToEdit = InsertProperty(htmlToEdit, "buttonContent", fromJson[i].text);
-                htmlToEdit = InsertProperty(htmlToEdit, "onClickFunction", fromJson[i].onClick);
-            }
-            else {
-                htmlToEdit = InsertProperty(htmlToEdit, "classes", fromJson[i].classes);
-                htmlToEdit = InsertProperty(htmlToEdit, "buttonContent", fromJson[i].text);
-                htmlToEdit = InsertProperty(htmlToEdit, "onClickFunction", fromJson[i].onClick);
-            }
+            htmlToEdit = InsertProperty(htmlToEdit, "classes", fromJson[i].classes);
+            htmlToEdit = InsertProperty(htmlToEdit, "buttonContent", fromJson[i].text);
+            htmlToEdit = InsertProperty(htmlToEdit, "onClickFunction", fromJson[i].onClick);
 
             finalHTML += htmlToEdit;
         }
@@ -58,6 +51,14 @@
         // Show Loading ... perhaps.
         $AjaxUtils.SendGetRequest(jsonURL, BuildAndShowButtons, true);
     };
+
+    function FetchedSnippetHandler(request, isJason) {
+        InsertHTML("#buttonContentItself", request.responseText);
+    }
+
+    UseAjax.FetchButtonSnippet = function (snippetToFetch) {
+        $AjaxUtils.SendGetRequest(snippetToFetch, FetchedSnippetHandler, false);
+    }
 
     global.$UseAjax = UseAjax; // Exposing the namespace.
 })(window); // Calling IIFE.

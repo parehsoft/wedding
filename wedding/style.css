@@ -20,6 +20,7 @@ body {
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.85);
+    z-index: 6;
 }
 
 .Close 
@@ -222,7 +223,24 @@ h1
 {
 	border: 1px solid black;
 	margin: 20px;
-		overflow: auto;
+	max-height: 600px;
+	overflow: auto;
+}
+
+.BoxHolder
+{
+	overflow: auto;
+}
+
+#booksToAnswerWhy > ul
+{
+	color: red;
+}
+
+#booksToAnswerWhy > ul a
+{
+	color: silver;
+	transition: 1s;
 }
 
 /* Pseudo Class Selectors */
@@ -293,8 +311,13 @@ h1:hover #heart
 
 #CloseButtonContent:hover, #CloseButtonContent:active
 {
-	/*background-color: red;*/
 	color: red;
+}
+
+#booksToAnswerWhy > ul a:hover
+{
+	color: #F5F5F5;
+	text-decoration: none;
 }
 
 /* Simple Responsive Framework */

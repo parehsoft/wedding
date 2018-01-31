@@ -16,7 +16,7 @@
         window.onclick = function (event) { if (event.target.tagName == "SECTION" || event.target == close2) { modal.style.display = "none"; } };
     };
 
-    ModalManipulator.listOfButtons = document.querySelectorAll(".Button");
+    // ModalManipulator.listOfButtons = document.querySelectorAll(".Button");
 
     window.$ModalManipulator = ModalManipulator;
 
