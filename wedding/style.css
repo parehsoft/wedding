@@ -23,6 +23,13 @@ body {
     z-index: 6;
 }
 
+.ModalRow
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
 .Close 
 {
     position: fixed;
@@ -235,11 +242,6 @@ h1
 #booksToAnswerWhy > ul
 {
 	color: gold;
-}
-
-#booksToAnswerWhy > ul li
-{
-	cursor: pointer;
 }
 
 #booksToAnswerWhy > ul a

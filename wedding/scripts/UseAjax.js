@@ -56,8 +56,16 @@
         InsertHTML("#buttonContentItself", request.responseText);
     }
 
+    function FetchedModalHandler(request, isJason) {
+        InsertHTML("#insideModal", request.responseText);
+    }
+
     UseAjax.FetchButtonSnippet = function (snippetToFetch) {
         $AjaxUtils.SendGetRequest(snippetToFetch, FetchedSnippetHandler, false);
+    }
+
+    UseAjax.FetchModalSnippet = function (snippetToFetch) {
+        $AjaxUtils.SendGetRequest(snippetToFetch, FetchedModalHandler, false);
     }
 
     global.$UseAjax = UseAjax; // Exposing the namespace.
