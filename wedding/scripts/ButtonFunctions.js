@@ -6,10 +6,19 @@
 
     ButtonFunctions.displayButtonContent = function (snippetToFetch) {
         $UseAjax.FetchButtonSnippet(snippetToFetch); // First, fetch snippet.
+        modal.style.removeProperty("opacity");
         modal.style.display = "block";
         close.onclick = function () {
             // When closed, firstly, remove the content. But it will be overwritten by another XMLHTTPRequest.
-            modal.style.display = "none";
+            var opacity = 1;
+            var interval = setInterval(FadeOut, 10);
+            function FadeOut() {
+                if (opacity <= 0.07) { clearInterval(interval); modal.style.opacity = 0; modal.style.display = "none"; }
+                else {
+                    opacity -= 0.05;
+                    modal.style.opacity = opacity;
+                }
+            }
         };
     };
 

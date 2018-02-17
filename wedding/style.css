@@ -134,6 +134,17 @@ h1
 	text-align: center;
 }
 
+#guestInfo
+{
+	margin-top: 15px;
+	text-align: center;
+	color: white; /*#c4b5b5*/
+	font-size: 0.9em;
+	opacity: 0;
+	cursor: help;
+	transition: 1s;
+}
+
 #buttonContainer
 {
 	position: absolute;
@@ -175,7 +186,6 @@ h1
 	width: 100%;
 	height: auto;
 	z-index: 5;
-	transition: 1s;
 	animation-name: animateButtonContentFrameDisplay;
     animation-duration: 1s;
 }
@@ -232,6 +242,7 @@ h1
 	margin: 20px;
 	max-height: 600px;
 	overflow: auto;
+	background-color: black;
 }
 
 .BoxHolder
@@ -263,13 +274,18 @@ h1
 
 h1:hover
 {
-	cursor: wait;
+	cursor: none;
 }
 
 h1:hover #heart 
 {
 	font-size: 64px;
 	color: red;
+}
+
+#guestInfo:hover
+{
+	opacity: 1;
 }
 
 #leftBorder:hover
