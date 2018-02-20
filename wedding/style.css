@@ -185,6 +185,8 @@ h1
 	bottom: 2%;
 	width: 100%;
 	height: auto;
+	max-height: 75%;
+	overflow: auto;
 	z-index: 5;
 	animation-name: animateButtonContentFrameDisplay;
     animation-duration: 1s;
