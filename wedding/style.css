@@ -178,6 +178,12 @@ h1
 	transition: 1s;
 }
 
+.SlashInButtons
+{
+	color: gold;
+	transition: 1s;
+}
+
 #ButtonContentFrame
 {
 	display: none;
@@ -330,6 +336,11 @@ h1:hover #heart
 .Button:hover .TextBox
 {
 	padding-right: 30px;
+}
+
+.Button:hover .SlashInButtons
+{
+	color: red;
 }
 
 .TextBox:after

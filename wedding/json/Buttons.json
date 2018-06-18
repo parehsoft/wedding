@@ -1,22 +1,22 @@
 [{
 	"id": 0,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
-	"text": "Kde, kedy? / Where, when?",
+	"text": "Kde, kedy? <span class=\"SlashInButtons\"><b>/</b></span> Where, when?",
 	"onClick" : "$ButtonFunctions.displayButtonWhereAndWhen();"
 }, {
 	"id": 1,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
-	"text": "Prečo / Why ?",
+	"text": "Prečo <span class=\"SlashInButtons\"><b>/</b></span> Why ?",
 	"onClick" : "$ButtonFunctions.displayButtonWhy();"
 }, {
 	"id": 2,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-11 Col-1600plus-10",
-	"text": "Ubytovanie tuzemskí hostia&nbsp;/ Accomodation domestic guests",
+	"text": "Ubytovanie tuzemskí hostia&nbsp;<span class=\"SlashInButtons\"><b>/</b></span> Accomodation domestic guests",
 	"onClick" : "$ButtonFunctions.displayButtonAccomodation();"
 }, {
 	"id": 3,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-11 Col-1600plus-10",
-	"text": "Ubytovanie zahraničný hostia&nbsp;/ Accomodation international guests",
+	"text": "Ubytovanie zahraničný hostia&nbsp;<span class=\"SlashInButtons\"><b>/</b></span> Accomodation international guests",
 	"onClick" : "$ButtonFunctions.displayButtonAccomodationInternational();"
 }, {
 	"id": 4,
