@@ -1,12 +1,12 @@
 [{
 	"id": 0,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
-	"text": "Kde, kedy? / Where, when ?",
+	"text": "Kde, kedy? / Where, when?",
 	"onClick" : "$ButtonFunctions.displayButtonWhereAndWhen();"
 }, {
 	"id": 1,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-11 Col-1600plus-10",
-	"text": "Ubytovanie tuzemskí hostia / Accomodation domestic guests",
+	"text": "Ubytovanie tuzemskí hostia&nbsp;/ Accomodation domestic guests",
 	"onClick" : "$ButtonFunctions.displayButtonAccomodation();"
 }, {
 	"id": 2,
