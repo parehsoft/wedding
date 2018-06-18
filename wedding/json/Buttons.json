@@ -1,25 +1,20 @@
 [{
 	"id": 0,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
-	"text": "Kde / Where ?",
+	"text": "Kde a kedy? / Where and when ?",
 	"onClick" : "$ButtonFunctions.displayButtonWhereAndWhen();"
 }, {
 	"id": 1,
-	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
-	"text": "Kedy / When ?",
-	"onClick" : "$ButtonFunctions.displayButtonWhereAndWhen();"
-}, {
-	"id": 2,
-	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
-	"text": "Ubytovanie / Accomodation",
+	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-11 Col-1600plus-10",
+	"text": "Ubytovanie tuzemskí hostia / Accomodation domestic guests",
 	"onClick" : "$ButtonFunctions.displayButtonAccomodation();"
 }, {
-	"id": 3,
+	"id": 2,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
 	"text": "Prečo / Why ?",
 	"onClick" : "$ButtonFunctions.displayButtonWhy();"
 }, {
-	"id": 4,
+	"id": 3,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-11 Col-1600plus-10",
 	"text": "Všetko / All information",
 	"onClick" : "$ModalManipulator.displayModal();"

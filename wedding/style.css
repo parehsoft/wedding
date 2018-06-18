@@ -252,11 +252,6 @@ h1
 	overflow: auto;
 }
 
-.TitleOfCurrentBoxHolder
-{
-	color: white;
-}
-
 #ListOfRoomsByGuests, #ListOfRoomsByGuests ul
 {
 	color: gold;
