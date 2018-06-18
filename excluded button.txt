@@ -1,0 +1,6 @@
+, {
+	"id": 4,
+	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-11 Col-1600plus-10",
+	"text": "Všetko / All information",
+	"onClick" : "$ModalManipulator.displayModal();"
+}
