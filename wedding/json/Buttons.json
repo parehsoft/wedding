@@ -1,7 +1,7 @@
 [{
 	"id": 0,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-5 Col-1600plus-4",
-	"text": "Kde a kedy? / Where and when ?",
+	"text": "Kde, kedy? / Where, when ?",
 	"onClick" : "$ButtonFunctions.displayButtonWhereAndWhen();"
 }, {
 	"id": 1,
