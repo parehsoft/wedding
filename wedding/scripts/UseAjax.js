@@ -48,7 +48,6 @@
     }
 
     UseAjax.LoadButtons = function () {
-        // Show Loading ... perhaps.
         $AjaxUtils.SendGetRequest(jsonURL, BuildAndShowButtons, true);
     };
 

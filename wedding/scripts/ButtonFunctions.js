@@ -9,7 +9,6 @@
         modal.style.removeProperty("opacity");
         modal.style.display = "block";
         close.onclick = function () {
-            // When closed, firstly, remove the content. But it will be overwritten by another XMLHTTPRequest.
             var opacity = 1;
             var interval = setInterval(FadeOut, 10);
             function FadeOut() {
