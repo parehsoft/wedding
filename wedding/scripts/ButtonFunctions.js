@@ -23,18 +23,23 @@
     };
 
     ButtonFunctions.displayButtonWhereAndWhen = function () {
-        console.log("1st, or 2nd button was clicked!");
+        console.log("WhereAndWhenSnippet was clicked!");
         ButtonFunctions.displayButtonContent("./snippets/WhereAndWhenSnippet.html");
     };
 
     ButtonFunctions.displayButtonAccomodation = function () {
-        console.log("3dr button was clicked!");
+        console.log("AccomodationSnippet was clicked!");
         ButtonFunctions.displayButtonContent("./snippets/AccomodationSnippet.html");
     };
 
     ButtonFunctions.displayButtonWhy = function () {
-        console.log("4th button was clicked!");
+        console.log("WhySnippet was clicked!");
         ButtonFunctions.displayButtonContent("./snippets/WhySnippet.html");
+    };
+
+    ButtonFunctions.displayButtonInternationalAccomodation = function () {
+        console.log("InternationalAccomodationSnippet was clicked!");
+        ButtonFunctions.displayButtonContent("./snippets/InternationalAccomodationSnippet.html");
     };
 
     global.$ButtonFunctions = ButtonFunctions; // Exposing the namespace.

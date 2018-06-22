@@ -17,5 +17,5 @@
 	"id": 3,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-11 Col-1600plus-10",
 	"text": "Ubytovanie zahraniční hostia&nbsp;<span class=\"SlashInButtons\"><b>/</b></span> Accomodation international guests",
-	"onClick" : "$ButtonFunctions.displayButtonAccomodationInternational();"
+	"onClick" : "$ButtonFunctions.displayButtonInternationalAccomodation();"
 }]
