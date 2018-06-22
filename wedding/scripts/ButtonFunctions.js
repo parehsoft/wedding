@@ -15,7 +15,7 @@
                 if (opacity <= 0.07) {
                     clearInterval(interval);
                     modal.style.opacity = 0;
-                    document.getElementById("buttonContentItself").innerHTML = "";
+                    document.getElementById("buttonContentItself").innerHTML = ""; // Clear the content. Otherwise previus content will be visible for a fraction of a second, while new content is being loaded.
                     modal.style.display = "none";
                 }
                 else {
@@ -48,5 +48,3 @@
 
     global.$ButtonFunctions = ButtonFunctions; // Exposing the namespace.
 })(window); // Calling IIFE.
-
-//$ButtonFunctions.;
