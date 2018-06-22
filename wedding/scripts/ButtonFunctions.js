@@ -5,6 +5,7 @@
     var close = document.querySelector("#CloseButtonContent");
 
     ButtonFunctions.displayButtonContent = function (snippetToFetch) {
+        document.getElementById("buttonContentItself").innerHTML = "";
         $UseAjax.FetchButtonSnippet(snippetToFetch); // First, fetch snippet.
         modal.style.removeProperty("opacity");
         modal.style.display = "block";
