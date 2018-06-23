@@ -46,5 +46,10 @@
         ButtonFunctions.displayButtonContent("./snippets/InternationalAccomodationSnippet.html");
     };
 
+    ButtonFunctions.displayButtonTransportation = function () {
+        console.log("TransportationSnippet was clicked!");
+        ButtonFunctions.displayButtonContent("./snippets/TransportationSnippet.html");
+    };
+
     global.$ButtonFunctions = ButtonFunctions; // Exposing the namespace.
 })(window); // Calling IIFE.
