@@ -11,7 +11,7 @@
 }, {
 	"id": 2,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-11 Col-1600plus-10",
-	"text": "Ubytovanie tuzemskí hostia&nbsp;<span class=\"SlashInButtons\"><b>/</b></span> Accomodation domestic guests",
+	"text": "Ubytovanie domáci hostia&nbsp;<span class=\"SlashInButtons\"><b>/</b></span> Accomodation domestic guests",
 	"onClick" : "$ButtonFunctions.displayButtonAccomodation();"
 }, {
 	"id": 3,
