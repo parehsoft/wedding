@@ -21,6 +21,6 @@
 }, {
 	"id": 4,
 	"classes" : "Button Col-1199AndLess-12 Col-1200to1599-11 Col-1600plus-10",
-	"text": "Doprava&nbsp;<span class=\"SlashInButtons\"><b>/</b></span> Transportation",
+	"text": "Doprava autobusom&nbsp;<span class=\"SlashInButtons\"><b>/</b></span> Transportation by bus",
 	"onClick" : "$ButtonFunctions.displayButtonTransportation();"
 }]
