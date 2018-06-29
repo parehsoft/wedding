@@ -320,9 +320,19 @@ h1:hover #heart
 	border-right: 1px solid red;
 }
 
+#leftBorder:hover #guestInfo
+{
+	opacity: 1;
+}
+
 #rightBorder:hover
 {
 	border-left: 1px solid red;
+}
+
+#rightBorder:hover #guestInfo
+{
+	opacity: 1;
 }
 
 #countdown:hover
