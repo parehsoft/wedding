@@ -260,7 +260,7 @@ h1
 	color: gold;
 }
 
-#ListOfRoomsByGuests li > div
+#ListOfRoomsByGuests li div
 {
 	color: silver;
 }
