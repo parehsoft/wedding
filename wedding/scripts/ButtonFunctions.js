@@ -5,6 +5,7 @@
     var close = document.querySelector("#CloseButtonContent");
 
     ButtonFunctions.displayButtonContent = function (snippetToFetch) {
+        ShowLoading();
         $UseAjax.FetchButtonSnippet(snippetToFetch); // First, fetch snippet.
         modal.style.removeProperty("opacity");
         modal.style.display = "block";
@@ -25,6 +26,11 @@
             }
         };
     };
+
+    function ShowLoading() {
+        document.getElementById("buttonContentItself").innerHTML = " <div id=\"loadingImage\"><img src=\"./images/ajax-loader.gif\" width=\"100%\" height=\"auto\"></div> ";
+        console.log("Show loading calleeeedd!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+    }
 
     ButtonFunctions.displayButtonWhereAndWhen = function () {
         console.log("WhereAndWhenSnippet was clicked!");
