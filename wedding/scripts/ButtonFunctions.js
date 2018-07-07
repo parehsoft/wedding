@@ -29,7 +29,6 @@
 
     function ShowLoading() {
         document.getElementById("buttonContentItself").innerHTML = " <div id=\"loadingImage\"><img src=\"./images/ajax-loader.gif\" width=\"100%\" height=\"auto\"></div> ";
-        console.log("Show loading calleeeedd!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
     }
 
     ButtonFunctions.displayButtonWhereAndWhen = function () {
