@@ -144,6 +144,15 @@ h1
 	transition: 1s;
 }
 
+#hrInGuestInfo
+{
+	color: yellow;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	transition: 1s;
+}
+
 #buttonContainer
 {
 	/*position: absolute;
@@ -325,6 +334,11 @@ h1:hover #heart
 #countdown:hover
 {
 	cursor: wait;
+}
+
+#guestInfo:hover #hrInGuestInfo
+{
+	color: red;
 }
 
 .Button:hover
