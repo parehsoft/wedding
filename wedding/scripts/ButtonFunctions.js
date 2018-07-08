@@ -9,26 +9,33 @@
         $UseAjax.FetchButtonSnippet(snippetToFetch); // First, fetch snippet.
         modal.style.removeProperty("opacity");
         modal.style.display = "block";
-        close.onclick = function () {
-            var opacity = 1;
-            var interval = setInterval(FadeOut, 10);
-            function FadeOut() {
-                if (opacity <= 0.07) {
-                    clearInterval(interval);
-                    modal.style.opacity = 0;
-                    document.getElementById("buttonContentItself").innerHTML = ""; // Clear the content. Otherwise previus content will be visible for a fraction of a second, while new content is being loaded.
-                    modal.style.display = "none";
-                }
-                else {
-                    opacity -= 0.05;
-                    modal.style.opacity = opacity;
-                }
+        close.onclick = CloseButtonContent;
+        global.onclick = function (event) {
+            if (event.target == document.getElementById("ButtonContentFrame") || event.target == document.getElementById("specialNegativeMarginCompensator") || event.target == document.getElementById("Fitter")) {
+                CloseButtonContent();
             }
         };
     };
 
     function ShowLoading() {
         document.getElementById("buttonContentItself").innerHTML = " <div id=\"loadingImage\"><img src=\"./images/ajax-loader.gif\" width=\"100%\" height=\"auto\"></div> ";
+    }
+
+    function CloseButtonContent() {
+        var opacity = 1;
+        var interval = setInterval(FadeOut, 10);
+        function FadeOut() {
+            if (opacity <= 0.07) {
+                clearInterval(interval);
+                modal.style.opacity = 0;
+                document.getElementById("buttonContentItself").innerHTML = ""; // Clear the content.
+                modal.style.display = "none";
+            }
+            else {
+                opacity -= 0.05;
+                modal.style.opacity = opacity;
+            }
+        }
     }
 
     ButtonFunctions.displayButtonWhereAndWhen = function () {
